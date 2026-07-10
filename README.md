@@ -23,7 +23,7 @@
 - [nx 网格化（nxMesher）](./新版Nexus帮助文档/01_修改器/按修改器/nxMesher/README.md)
 - [nx 泡沫（nxFoam）](./新版Nexus帮助文档/01_修改器/按修改器/nxFoam/README.md)
 - [nx 拖尾（nxTrail）](./新版Nexus帮助文档/01_修改器/按修改器/nxTrail/README.md)
-- [文档（Document）- 子步（Substeps）](./新版Nexus帮助文档/02_面板与功能/对象与修改器界面/文档（Document）- 子步（Substeps）.md)
+- [文档（Document）- 子步（Substeps）](./新版Nexus帮助文档/02_%E9%9D%A2%E6%9D%BF%E4%B8%8E%E5%8A%9F%E8%83%BD/%E5%AF%B9%E8%B1%A1%E4%B8%8E%E4%BF%AE%E6%94%B9%E5%99%A8%E7%95%8C%E9%9D%A2/%E6%96%87%E6%A1%A3%EF%BC%88Document%EF%BC%89-%20%E5%AD%90%E6%AD%A5%EF%BC%88Substeps%EF%BC%89.md)
 
 ## 当前目录
 

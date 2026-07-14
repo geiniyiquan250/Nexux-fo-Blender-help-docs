@@ -16,6 +16,7 @@
 ## 已写正文直达
 
 - [nx 发射器（nxEmitter）](./新版Nexus帮助文档/01_修改器/按修改器/nxEmitter/README.md)
+- [nx 自旋（nxSpin）](./新版Nexus帮助文档/01_修改器/按修改器/nxSpin/README.md)
 - [nx 缓存（nxCache）](./新版Nexus帮助文档/01_修改器/按修改器/nxCache/README.md)
 - [nx 碰撞体（nxCollider）](./新版Nexus帮助文档/01_修改器/按修改器/nxCollider/README.md)
 - [nx 流体（nxFluids）](./新版Nexus帮助文档/01_修改器/按修改器/nxFluids/README.md)
@@ -53,6 +54,7 @@
 ## 当前已编写的正文
 
 - `nx 发射器（nxEmitter）`
+- `nx 自旋（nxSpin）`
 - `nx 缓存（nxCache）`
 - `nx 碰撞体（nxCollider）`
 - `nx 流体（nxFluids）`

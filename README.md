@@ -19,6 +19,7 @@
 - [nx 流场修改器（nxFlowField）](./新版Nexus帮助文档/01_修改器/按修改器/nxFlowField/README.md)
 - [nx 重力（nxGravity）](./新版Nexus帮助文档/01_修改器/按修改器/nxGravity/README.md)
 - [nx 风力（nxWind）](./新版Nexus帮助文档/01_修改器/按修改器/nxWind/README.md)
+- [nx 湍流（nxTurbulence）](./新版Nexus帮助文档/01_修改器/按修改器/nxTurbulence/README.md)
 - [nx 自旋（nxSpin）](./新版Nexus帮助文档/01_修改器/按修改器/nxSpin/README.md)
 - [nx 缓存（nxCache）](./新版Nexus帮助文档/01_修改器/按修改器/nxCache/README.md)
 - [nx 碰撞体（nxCollider）](./新版Nexus帮助文档/01_修改器/按修改器/nxCollider/README.md)
@@ -60,6 +61,7 @@
 - `nx 流场修改器（nxFlowField）`
 - `nx 重力（nxGravity）`
 - `nx 风力（nxWind）`
+- `nx 湍流（nxTurbulence）`
 - `nx 自旋（nxSpin）`
 - `nx 缓存（nxCache）`
 - `nx 碰撞体（nxCollider）`

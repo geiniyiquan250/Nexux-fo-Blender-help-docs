@@ -23,6 +23,7 @@
 - [nx 涡度（nxVorticity）](./新版Nexus帮助文档/01_修改器/按修改器/nxVorticity/README.md)
 - [nx 阻力（nxDrag）](./新版Nexus帮助文档/01_修改器/按修改器/nxDrag/README.md)
 - [nx 限制（nxLimit）](./新版Nexus帮助文档/01_修改器/按修改器/nxLimit/README.md)
+- [nx 速度（nxSpeed）](./新版Nexus帮助文档/01_修改器/按修改器/nxSpeed/README.md)
 - [nx 自旋（nxSpin）](./新版Nexus帮助文档/01_修改器/按修改器/nxSpin/README.md)
 - [nx 缓存（nxCache）](./新版Nexus帮助文档/01_修改器/按修改器/nxCache/README.md)
 - [nx 碰撞体（nxCollider）](./新版Nexus帮助文档/01_修改器/按修改器/nxCollider/README.md)
@@ -68,6 +69,7 @@
 - `nx 涡度（nxVorticity）`
 - `nx 阻力（nxDrag）`
 - `nx 限制（nxLimit）`
+- `nx 速度（nxSpeed）`
 - `nx 自旋（nxSpin）`
 - `nx 缓存（nxCache）`
 - `nx 碰撞体（nxCollider）`

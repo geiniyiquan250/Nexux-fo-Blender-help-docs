@@ -28,6 +28,7 @@
 - [nx 吸引（nxAttract）](./新版Nexus帮助文档/01_修改器/按修改器/nxAttract/README.md)
 - [nx 避让（nxAvoid）](./新版Nexus帮助文档/01_修改器/按修改器/nxAvoid/README.md)
 - [nx 爆炸（nxExplode）](./新版Nexus帮助文档/01_修改器/按修改器/nxExplode/README.md)
+- [nx 方向（nxDirection）](./新版Nexus帮助文档/01_修改器/按修改器/nxDirection/README.md)
 - [nx 自旋（nxSpin）](./新版Nexus帮助文档/01_修改器/按修改器/nxSpin/README.md)
 - [nx 缓存（nxCache）](./新版Nexus帮助文档/01_修改器/按修改器/nxCache/README.md)
 - [nx 碰撞体（nxCollider）](./新版Nexus帮助文档/01_修改器/按修改器/nxCollider/README.md)
@@ -78,6 +79,7 @@
 - `nx 吸引（nxAttract）`
 - `nx 避让（nxAvoid）`
 - `nx 爆炸（nxExplode）`
+- `nx 方向（nxDirection）`
 - `nx 自旋（nxSpin）`
 - `nx 缓存（nxCache）`
 - `nx 碰撞体（nxCollider）`

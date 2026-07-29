@@ -222,7 +222,7 @@
 这一级影响的是当前场景这套 NeXus 模拟每一帧怎么细分。  
 它属于更上层的时间细分。
 
-相关说明可以一起看 [文档（Document）- 子步（Substeps）](C:/Users/bbs99/Desktop/chinese_help_docs_source/新版Nexus帮助文档/02_面板与功能/对象与修改器界面/文档（Document）- 子步（Substeps）.md)。调整时一次只改变一层，才能判断当前不稳定来自全局时间推进还是流体求解器内部。
+相关说明可以一起看 [文档（Document）- 子步（Substeps）](../../../02_面板与功能/对象与修改器界面/文档（Document）- 子步（Substeps）.md)。调整时一次只改变一层，才能判断当前不稳定来自全局时间推进还是流体求解器内部。
 
 ### `PBD 求解器（PBD）` 和 `SPH 求解器（SPH）` 里的 `子步（Substeps）`
 

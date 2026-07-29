@@ -4,6 +4,15 @@
 本文档为重新优化版本，用更直观、更通俗的方式描述每个功能和使用含义。  
 当前仓库只整理新版帮助文档，不包含旧版归档、备份文件和辅助脚本。
 
+## 当前编写基准
+
+- 当前 NeXus 插件版本：`2026.0.0`
+- 当前 Blender 便携版目录：`E:\blender-5.2.0-windows-x64`
+- 当前插件本体路径：`E:\blender-5.2.0-windows-x64\portable\extensions\extensions_insydium_ltd\insydium_nexus`
+- [NeXus 官方 Blender 帮助文档](https://docs.insydium.ltd/blender/)
+
+功能名称、默认值、参数范围和条件显示会同时核对官方 Blender 帮助文档与当前插件本体。两者存在差异时，正文以当前目标版本的插件本体为准。过时内容会直接更新，不在普通用户正文中保留旧行为。
+
 ## 快速索引
 
 - [新版总览与编写入口](./新版Nexus帮助文档/00_总览与编写入口/README.md)

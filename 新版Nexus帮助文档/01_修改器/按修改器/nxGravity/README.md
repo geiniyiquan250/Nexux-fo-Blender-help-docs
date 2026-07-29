@@ -113,6 +113,22 @@
 
 如果粒子朝向与预期相反，先看红色箭头，再检查效果朝向（Effect Towards）是否仍然指定了目标。
 
+## 已启用（Enabled）
+
+已启用（Enabled）关闭后会停用整个 `nx 重力（nxGravity）`，现有强度、变化和目标设置会继续保留。
+
+## 组（Groups Affected）
+
+组（Groups Affected）把 `nx 重力（nxGravity）` 限制到指定的 `nx 组（nxGroup）`。列表为空时影响所有可用粒子；加入组后，只有这些组中的粒子会受到重力。
+
+## 映射（Mapping）
+
+映射（Mapping）用粒子自身的数据驱动可映射的重力参数，让不同粒子承受不同程度的重力。具体可映射参数以当前映射列表为准。
+
+## 衰减（Falloff）
+
+衰减（Falloff）使用一个或多个 `nx 衰减（nxFalloff）` 对象限制重力的作用区域。这样可以让固定方向的重力只在指定空间内生效。
+
 ## 和其他修改器一起使用
 
 ### 和 nx 发射器（nxEmitter）

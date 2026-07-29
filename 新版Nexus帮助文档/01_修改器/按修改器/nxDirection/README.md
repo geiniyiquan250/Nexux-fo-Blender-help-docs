@@ -272,15 +272,27 @@ Y推力变化量（Y Kick Variation）给每个粒子的 Y轴推力（Y-Axis Kic
 - 关闭后，粒子达到完整角度后不会重新开始下一圈
 - 角度限制低于 `360°` 时，循环会显示为不可编辑
 
-## 修改器启用（Enabled）
+## 已启用（Enabled）
 
-修改器启用（Enabled）控制整个 `nx 方向（nxDirection）` 是否参与粒子流程。关闭后，所有方向层停止计算，层列表和参数会保留。
+已启用（Enabled）控制整个 `nx 方向（nxDirection）` 是否参与粒子流程。关闭后，所有方向层停止计算，层列表和参数会保留。
 
 ## 视口可见（Visible in Editor）
 
 方向修改器同时受修改器视口可见（Visible in Editor）和当前层视口可见（Visible in Editor）控制。两级都开启，并且当前层已经启用时，视口才会显示该层的辅助图形。
 
 当前插件只绘制方向层（Direction Layers）列表中正在选中的一层。切换活动层后，辅助图形会改为显示新层的方向箭头、圆周曲线或圆环图形。辅助图形不会作为可渲染几何体出现。
+
+## 组（Groups Affected）
+
+组（Groups Affected）把 `nx 方向（nxDirection）` 限制到指定的 `nx 组（nxGroup）`。列表为空时影响所有可用粒子；加入组后，只改变这些组中粒子的运动方向。
+
+## 映射（Mapping）
+
+映射（Mapping）用粒子自身的数据驱动可映射的方向参数，让不同粒子得到不同强度或不同程度的转向。具体可映射参数以当前映射列表为准。
+
+## 衰减（Falloff）
+
+衰减（Falloff）使用一个或多个 `nx 衰减（nxFalloff）` 对象限制整个方向修改器的作用区域。粒子离开有效衰减区域后，当前修改器不再改变它的运动方向。
 
 ## 和其他修改器一起使用
 
@@ -323,7 +335,7 @@ Y推力变化量（Y Kick Variation）给每个粒子的 Y轴推力（Y-Axis Kic
 自动创建的方向力（Direction Force）层中，方向（Direction）、扭曲（Twist）和吸引（Attract）默认都是 `0%`。先提高其中一项，再按下面顺序检查：
 
 1. `nx 方向（nxDirection）` 是否已经接入同一批粒子的修改器流程
-2. 修改器启用（Enabled）和当前层是否都已开启
+2. 已启用（Enabled）和当前层开关是否都已开启
 3. 混合强度（Blend Strength）是否大于 `0%`
 4. 当前层的方向强度或专用参数是否大于 `0`
 5. 组（Groups Affected）或衰减（Falloff）是否排除了当前粒子

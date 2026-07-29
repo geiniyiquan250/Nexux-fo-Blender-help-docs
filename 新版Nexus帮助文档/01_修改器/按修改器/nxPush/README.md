@@ -12,7 +12,7 @@
 2. 添加 `nx 推力（nxPush）`，并把它接入这批粒子的修改器流程。
 3. 保持默认绝对（Absolute）模式、距离（Distance）`0.1`、强度（Strength）`50%`、迭代（Iterations）`5`。
 4. 从同一帧播放，观察重叠粒子是否逐渐分开。
-5. 临时关闭修改器启用（Enabled），对比关闭后粒子是否重新堆叠在一起。
+5. 临时关闭已启用（Enabled），对比关闭后粒子是否重新堆叠在一起。
 6. 粒子仍有明显重叠时，先提高迭代（Iterations），再小幅提高强度（Strength）。
 7. 粒子半径存在变化时，把距离模式（Distance Mode）切换为粒子半径（Particle Radius），观察大小不同的粒子是否得到更合适的间距。
 
@@ -113,13 +113,27 @@
 4. 密集区域仍有残留重叠时，提高迭代（Iterations）。
 5. 粒子开始时突然散开，再增加缓入（Ease In）。
 
-## 修改器启用（Enabled）
+## 已启用（Enabled）
 
-修改器启用（Enabled）控制整个 `nx 推力（nxPush）` 是否参与粒子流程。关闭后，修改器停止执行粒子间距修正，现有参数会保留。
+已启用（Enabled）控制整个 `nx 推力（nxPush）` 是否参与粒子流程。关闭后，修改器停止执行粒子间距修正，现有参数会保留。
 
 ## 视口可见（Visible in Editor）
 
 当前插件的 `nx 推力（nxPush）` 没有专用视口辅助图形。切换视口可见（Visible in Editor）不会改变推开计算，也不会隐藏粒子模拟结果。
+
+## 组（Groups Affected）
+
+组（Groups Affected）决定哪些粒子交给 `nx 推力（nxPush）` 处理。列表为空时处理所有可用粒子；加入组后，只处理这些组中的粒子。
+
+仅同组（Only Same Group）继续决定被处理粒子是否只与同组粒子相互推开。两个设置一起使用时，先由组（Groups Affected）筛选粒子，再按仅同组（Only Same Group）决定配对范围。
+
+## 映射（Mapping）
+
+映射（Mapping）用粒子自身的数据驱动可映射的推力参数，让不同粒子得到不同推开距离或推开强度。具体可映射参数以当前映射列表为准。
+
+## 衰减（Falloff）
+
+衰减（Falloff）使用一个或多个 `nx 衰减（nxFalloff）` 对象限制推力的作用区域。这样可以只整理指定空间内的密集粒子。
 
 ## 和其他修改器一起使用
 
@@ -163,7 +177,7 @@
 
 1. `nx 发射器（nxEmitter）` 是否正在产生彼此接近的粒子
 2. `nx 推力（nxPush）` 是否已经接入同一批粒子的修改器流程
-3. 修改器启用（Enabled）是否打开
+3. 已启用（Enabled）是否打开
 4. 强度（Strength）是否大于 `0%`
 5. 绝对（Absolute）模式下距离（Distance）是否大于 `0`
 6. 粒子半径（Particle Radius）模式下粒子半径是否具有有效数值

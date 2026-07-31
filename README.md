@@ -27,6 +27,8 @@
 - [nx 避让（nxAvoid）](./新版Nexus帮助文档/01_修改器/按修改器/nxAvoid/README.md)
 - [nx 爆炸（nxExplode）](./新版Nexus帮助文档/01_修改器/按修改器/nxExplode/README.md)
 - [nx 方向（nxDirection）](./新版Nexus帮助文档/01_修改器/按修改器/nxDirection/README.md)
+- [nx 群聚（nxFlock）](./新版Nexus帮助文档/01_修改器/按修改器/nxFlock/README.md)
+- [nx 跟随几何体（nxFollowGeo）](./新版Nexus帮助文档/01_修改器/按修改器/nxFollowGeo/README.md)
 - [nx 自旋（nxSpin）](./新版Nexus帮助文档/01_修改器/按修改器/nxSpin/README.md)
 - [nx 缓存（nxCache）](./新版Nexus帮助文档/01_修改器/按修改器/nxCache/README.md)
 - [nx 碰撞体（nxCollider）](./新版Nexus帮助文档/01_修改器/按修改器/nxCollider/README.md)

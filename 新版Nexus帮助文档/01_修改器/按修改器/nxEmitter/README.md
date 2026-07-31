@@ -98,6 +98,8 @@
 - 规则（Regular）：按整齐网格排列，出生时不会互相重叠。
 - 六边形（Hexagonal）：按错开的六边形行列排列，同一范围内通常能容纳更多粒子。
 
+流体的初始粒子互相重叠时，求解开始阶段容易出现不稳定。规则（Regular）和六边形（Hexagonal）会分开排列出生粒子，更适合需要均匀初始分布的流体模拟。
+
 规则（Regular）和六边形（Hexagonal）使用间距（Spacing）和抖动（Jitter）控制排布，并替代随机模式中的出生率（Birthrate）或数量（Count）。原始形状会在面板中显示每次发射的预计粒子数量。
 
 - 间距（Spacing）：按粒子直径的百分比设置粒子中心间距，默认值为 `100%`。提高后粒子之间空隙增加，实际数量减少；降低后排布更紧密。
@@ -125,16 +127,26 @@
 
 ## 液体（Liquid）发射
 
-液体填充（Liquid Fill）和液体流动（Liquid Flow）会产生紧密排布的粒子，并连接到 `nx 流体（nxFluids）` 求解。
+液体填充（Liquid Fill）和液体流动（Liquid Flow）会产生紧密排布的粒子，并连接到 [nx 流体（nxFluids）](../nxFluids/README.md) 求解。流体域是容纳并计算液体的空间范围。
 
 - 流体（Fluid）：指定接收液体粒子的 `nx 流体（nxFluids）` 域。没有目标域时，液体无法进入对应流体模拟。
-- 求解器（Solver）：目标为 `nx 流体（nxFluids）` 时显示，可以直接选择该流体域使用的求解器。
+- 求解器（Solver）：目标为 `nx 流体（nxFluids）` 时显示。在这里选择 `PBD 求解器（PBD）`、`SPH 求解器（SPH）`、`FLIP 求解器（FLIP）` 或 `仿射网格粒子求解器（APIC）`，目标流体域会直接使用所选求解器，无需切换到流体域再修改。
 - 分辨率（Resolution）：流体域最长边上的体素数量，默认值为 `50`，最小值为 `10`。提高后粒子间距更小，能够表现更细的液体结构，同时粒子数量和计算量会增加；降低后模拟更轻，细小水花和边缘细节会减少。
 - 填充高度（Fill Level）：只在液体填充（Liquid Fill）中出现，范围为 `0%` 到 `100%`，默认值为 `30%`。提高后体积中初始液面更高，降低后初始液体更浅。
 - 显示填充高度（Show Fill Level）：只在液体填充（Liquid Fill）中出现。开启后会在视口显示预设液面，方便求解前确认高度。
 - 速度（Speed）：只在液体流动（Liquid Flow）中出现，决定液体注入速度。提高后液流离开发射器更快，降低后流入更慢。
 
 液体流动（Liquid Flow）还会显示所有帧发射（Emit All Frames）、开始发射（Start Emit）和结束发射（End Emit），用于控制注入时间。
+
+两种液体发射都会继续使用完整生命（Full Lifespan）、寿命（Lifespan）和变化（Variation），用于决定液体粒子是否随年龄消失。
+
+### 快速建立液体组合
+
+从添加（Add） ▸ INSYDIUM NeXus 选择 `nx 液体填充（nxLiquid Fill）` 或 `nx 液体流动（nxLiquid Flow）`，可以一次建立以 `FLIP 求解器（FLIP）` 开始的液体组合。组合包含对应类型的 `nx 发射器（nxEmitter）` 和 `nx 流体（nxFluids）` 域，还可以包含用于生成渲染表面的 `nx 网格化（nxMesher）`，以及由 `nx 组（nxGroup）`、`nx 泡沫（nxFoam）` 和 `nx 重力（nxGravity）` 配合产生的白水粒子。
+
+生成的 `nx 发射器（nxEmitter）`、`nx 流体（nxFluids）`、`nx 网格化（nxMesher）`、`nx 泡沫（nxFoam）` 和白水粒子组会整理在同一个空物体下。场景中的 `nx 重力（nxGravity）` 会被创建或复用。`nx 网格化（nxMesher）` 和 `nx 泡沫（nxFoam）` 初始处于关闭状态，需要生成液体表面或白水时再开启。
+
+预设（Preset）提供水（Water）、浓稠粘性（Thick Viscous）和稀薄粘性（Thin Viscous）。选择预设会设置流体域的初始粘度（Viscosity）和表面张力（Surface Tension），适合作为继续调整的起点。
 
 ## 粒子出生属性
 

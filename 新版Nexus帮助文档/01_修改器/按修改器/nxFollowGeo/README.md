@@ -51,8 +51,6 @@
 
 - 无（None）：持续跟随表面
 - 时间（Time）：到达释放时间（Release Time）后离开
-- 选集（Selection）：按当前选集状态离开
-- 衰减（Falloff）：按当前衰减区域的状态离开
 
 时间（Time）模式下，时间模式（Time Mode）可选粒子寿命（Particle Age）或帧时间（Frame Time）。粒子寿命从每颗粒子出生时开始计时；帧时间按场景时间线计时。释放时间（Release Time）默认 `30` 帧，变化（Variation）会让粒子在不同时间离开，避免整批同时脱离。
 

@@ -1,18 +1,50 @@
-# 修改器文档骨架
+# 修改器帮助文档
 
 当前文档版本：NeXus `2026.0.0`
 
-这里是新版修改器帮助文档主目录。
+## 修改器索引
 
-结构分两种视角：
-
-- `按修改器`
-  每个修改器单独一个文件夹，适合真正落正文。
-
-- `按主题`
-  用来整理多个修改器的组合关系、功能边界和重写思路。
-
-建议主写法：
-
-- 正文优先落在 `按修改器`
-- 组合关系和共性问题补到 `按主题`
+- [nx 发射器（nxEmitter）](./按修改器/nxEmitter/README.md)
+- [nx 缓存（nxCache）](./按修改器/nxCache/README.md)
+- [nx 碰撞体（nxCollider）](./按修改器/nxCollider/README.md)
+- [nx 流体（nxFluids）](./按修改器/nxFluids/README.md)
+- [nx 粒子-粒子碰撞（nxPPCollisions）](./按修改器/nxPPCollisions/README.md)
+- [nx 网格化（nxMesher）](./按修改器/nxMesher/README.md)
+- [nx 泡沫（nxFoam）](./按修改器/nxFoam/README.md)
+- [nx 拖尾（nxTrail）](./按修改器/nxTrail/README.md)
+- [nx 流场修改器（nxFlowField）](./按修改器/nxFlowField/README.md)
+- [nx 重力（nxGravity）](./按修改器/nxGravity/README.md)
+- [nx 风力（nxWind）](./按修改器/nxWind/README.md)
+- [nx 湍流（nxTurbulence）](./按修改器/nxTurbulence/README.md)
+- [nx 涡度（nxVorticity）](./按修改器/nxVorticity/README.md)
+- [nx 阻力（nxDrag）](./按修改器/nxDrag/README.md)
+- [nx 限制（nxLimit）](./按修改器/nxLimit/README.md)
+- [nx 速度（nxSpeed）](./按修改器/nxSpeed/README.md)
+- [nx 推力（nxPush）](./按修改器/nxPush/README.md)
+- [nx 吸引（nxAttract）](./按修改器/nxAttract/README.md)
+- [nx 避让（nxAvoid）](./按修改器/nxAvoid/README.md)
+- [nx 爆炸（nxExplode）](./按修改器/nxExplode/README.md)
+- [nx 方向（nxDirection）](./按修改器/nxDirection/README.md)
+- [nx 群聚（nxFlock）](./按修改器/nxFlock/README.md)
+- [nx 跟随几何体（nxFollowGeo）](./按修改器/nxFollowGeo/README.md)
+- [nx 旋转（nxRotate）](./按修改器/nxRotate/README.md)
+- [nx 缩放（nxScale）](./按修改器/nxScale/README.md)
+- [nx 自旋（nxSpin）](./按修改器/nxSpin/README.md)
+- [nx 混合（nxBlend）](./按修改器/nxBlend/README.md)
+- [nx 颜色（nxColor）](./按修改器/nxColor/README.md)
+- [nx 约束（nxConstraints）](./按修改器/nxConstraints/README.md)
+- [nx 覆盖（nxCover）](./按修改器/nxCover/README.md)
+- [nx 树突（nxDendrite）](./按修改器/nxDendrite/README.md)
+- [nx 衰减（nxFalloff）](./按修改器/nxFalloff/README.md)
+- [nx 生成器（nxGenerator）](./按修改器/nxGenerator/README.md)
+- [nx 组（nxGroup）](./按修改器/nxGroup/README.md)
+- [nx 销毁（nxKill）](./按修改器/nxKill/README.md)
+- [nx 薄片（nxSheeter）](./按修改器/nxSheeter/README.md)
+- [nx 飞溅（nxSplash）](./按修改器/nxSplash/README.md)
+- [nx 粘滞（nxSticky）](./按修改器/nxSticky/README.md)
+- [nx 波浪（nxWave）](./按修改器/nxWave/README.md)
+- [nx 问题（nxQuestion）](./按修改器/nxQuestion/README.md)
+- [nx 感染（nxInfectio）](./按修改器/nxInfectio/README.md)
+- [nx 爆炸特效（nxExplosiaFX）](./按修改器/nxExplosiaFX/README.md)
+- [nx 文件夹（nxFolder）](./按修改器/nxFolder/README.md)
+- [nx 高分辨率（nxUpres）](./按修改器/nxUpres/README.md)
